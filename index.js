@@ -26,7 +26,7 @@ exports.scanData = function(data, cbPrimary) {
 	skinRegions = [],
 	// private functions
 	initCanvas = function(){
-		canvas = new Canvas();
+		canvas = Canvas.createCanvas();
 		ctx = canvas.getContext('2d');
 	},
 	loadImage = function(){
