@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "canvas": "^1.1.6"
+    "canvas": "^2.4.1"
   },
   "devDependencies": {},
   "scripts": {
