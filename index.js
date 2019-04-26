@@ -7,7 +7,7 @@
  */
 
 var Canvas = require('canvas');
-var Image = Image = Canvas.Image;
+var Image = Canvas.Image;
 var fs = require('fs');
 
 exports.scanFile = function(path, cb) {
