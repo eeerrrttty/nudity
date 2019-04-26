@@ -32,8 +32,8 @@ exports.scanData = function(data, cbPrimary) {
 		var img = new Image();
 		img.src = data;
 		// apply the width and height to the canvas element
-		canvas.width = img.width;
-		canvas.height = img.height;
+		canvas.width = img.width || img.naturalWidth;
+		canvas.height = img.height || img.naturalHeight;
 		// reset the result function
 		// draw the image into the canvas element
 		ctx.drawImage(img, 0, 0);
