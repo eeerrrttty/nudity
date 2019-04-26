@@ -7,7 +7,6 @@
  */
 
 var Canvas = require('canvas');
-var Image = Image = new Canvas.Image();
 var fs = require('fs');
 
 exports.scanFile = function(path, cb) {
@@ -30,7 +29,7 @@ exports.scanData = function(data, cbPrimary) {
 		ctx = canvas.getContext('2d');
 	},
 	loadImage = function(){
-		var img = new Image;
+		var img = new Image();
 		img.src = data;
 		// apply the width and height to the canvas element
 		canvas.width = img.width;
