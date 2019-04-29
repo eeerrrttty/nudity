@@ -31,16 +31,19 @@ exports.scanData = function(data, cbPrimary) {
 	loadImage = function(){
 		var img = new Image();
 		img.src = data;
+		console.log('test0', img.width)
 		// apply the width and height to the canvas element
 		canvas.width = img.width || img.naturalWidth;
 		canvas.height = img.height || img.naturalHeight;
 		// reset the result function
 		// draw the image into the canvas element
 		ctx.drawImage(img, 0, 0);
+		console.log('test1', canvas.width)
 	},
 	scanImage = function(cb){
 		process.nextTick(function() {
 			// get the image data
+			console.log('test2', canvas.width)
 			var image = ctx.getImageData(0, 0, canvas.width, canvas.height),
 			imageData = image.data;
 			skinMap = [],
